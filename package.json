@@ -1,0 +1,34 @@
+{
+  "name": "@wrsmith108/claude-skill-flaky-test-detector",
+  "version": "1.0.0",
+  "description": "Claude Code skill for detecting flaky test patterns that cause intermittent CI failures",
+  "keywords": [
+    "claude-code",
+    "claude-skill",
+    "flaky-tests",
+    "testing",
+    "ci-cd",
+    "test-automation",
+    "developer-tools"
+  ],
+  "author": "wrsmith108",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wrsmith108/claude-skill-flaky-test-detector.git"
+  },
+  "main": "scripts/index.ts",
+  "scripts": {
+    "start": "npx tsx scripts/index.ts",
+    "check": "npx tsx scripts/index.ts",
+    "check:json": "npx tsx scripts/index.ts --json",
+    "check:ci": "npx tsx scripts/index.ts --ci"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  }
+}
