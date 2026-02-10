@@ -4,7 +4,7 @@
  * Flaky Test Detector - Main Entry Point
  *
  * Usage:
- *   npx tsx ~/.claude/skills/flaky-test-detector/scripts/index.ts [dir] [options]
+ *   npx tsx scripts/index.ts [dir] [options]
  *
  * Options:
  *   --json     Output as JSON instead of markdown
