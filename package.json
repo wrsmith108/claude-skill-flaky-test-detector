@@ -1,6 +1,6 @@
 {
   "name": "@wrsmith108/claude-skill-flaky-test-detector",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Claude Code skill for detecting flaky test patterns that cause intermittent CI failures",
   "keywords": [
     "claude-code",
