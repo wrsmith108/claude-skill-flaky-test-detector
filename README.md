@@ -15,7 +15,7 @@ git clone https://github.com/wrsmith108/claude-skill-flaky-test-detector.git ~/.
 
 ```bash
 # Run directly with npx
-npx tsx ~/.claude/skills/flaky-test-detector/scripts/index.ts [directory] [options]
+npx tsx scripts/index.ts [directory] [options]
 ```
 
 ## Trigger Phrases
@@ -50,16 +50,16 @@ Scans `*.test.ts` and `*.spec.ts` files to detect:
 
 ```bash
 # Run the detector on all test files
-npx tsx ~/.claude/skills/flaky-test-detector/scripts/index.ts
+npx tsx scripts/index.ts
 
 # Scan specific directory
-npx tsx ~/.claude/skills/flaky-test-detector/scripts/index.ts ./src/tests
+npx tsx scripts/index.ts ./src/tests
 
 # Output as JSON
-npx tsx ~/.claude/skills/flaky-test-detector/scripts/index.ts --json
+npx tsx scripts/index.ts --json
 
 # CI mode: exit with code 1 if HIGH severity issues found
-npx tsx ~/.claude/skills/flaky-test-detector/scripts/index.ts --ci
+npx tsx scripts/index.ts --ci
 ```
 
 ### Options
@@ -97,7 +97,7 @@ Add to your CI pipeline to catch flaky patterns before merge:
 
 ```yaml
 - name: Check for flaky test patterns
-  run: npx tsx ~/.claude/skills/flaky-test-detector/scripts/index.ts --ci
+  run: npx tsx scripts/index.ts --ci
 ```
 
 ## Fix Suggestions
